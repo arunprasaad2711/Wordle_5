@@ -1,0 +1,165 @@
+Prerequisite
+> Wordbackup - CSV file - pandas data frame.
+
+PPYAH - YYYYY
+GAPPY - BGGGG = [6, 0, 15, 15, 24]
+pSum = 54
+pSum_min = 54
+pSum_max = 54 + 25 = 79
+
+B = 0
+Y = 1
+G = 5
+
+Y  = 1 (1)
+YY = 2 ()
+YYY = 3 ()
+YYYY = 4  ()
+YYYYY = 5 ()
+
+YYYYY = 5 ()
+GYYYY = 9 (1 word 4 times - not possible)
+GGYYY = 13 (1 letter repeats thrice = not applicable; 1 unique + 1 letter repeats twice = not applicable; 3 uniques = 6 possibilities)
+GGGYY = 17 (2 choices)
+GGGGG = 25 (answer)
+
+Super filter Hierarchy
+GGGGG = 1 word
+GGGGY = 1 word
+GGGGB = 26 words
+GGGYY = 2 words
+GGGYB = 27 words
+GGGBB = 26^2 words
+GGYYY = 6 words
+GGYYB = ? words
+GGYBB = 26^2 + 1 words
+GGBBB = 26^3 words
+---------------
+
+GYYYY = 
+
+1 unique + 1 repeat
+000
+001
+010
+011
+100
+101
+110
+111
+
+1 unique + 1 repeat AB
+GGYYY = __ABB - not possible
+GGYYY = __BAB - not possible
+GGYYY = __BBA - not possible
+
+3 uniques - 6 possibilities
+GGYYY = __ABC
+GGYYY = __ACB
+GGYYY = __BAC
+GGYYY = __BCA
+GGYYY = __CAB
+GGYYY = __CBA
+
+1 letter repeats 4 times
+GYYYY = _AAAA = impossible
+
+ABCD = 4x4x4x4 = 256
+AABC
+
+1 letter 2 times + 2 uniques
+GYYYY = _AABC => _BCAA or _CBAA
+GYYYY = _AACB => _CBAA or _BCAA
+GYYYY = _ABAC => _BACA or _CABA
+GYYYY = _ACAB => 
+GYYYY = _ABCA
+GYYYY = _ACBA
+GYYYY = _BAAC
+GYYYY = _CAAB
+GYYYY = _BACA
+GYYYY = _CABA
+GYYYY = _BCAA
+GYYYY = _CBAA
+1 letter 3 times
+
+
+G = 5
+GG = 10
+GGG = 15
+GGGG = 20
+GGGGG = 25
+
+YYYYY = 5
+BBGBB = 5
+PPYAH = 
+Elimination list = 22 entries
+
+B = Black - absent
+Y = Yellow - present in an alternate location.
+G = Green - present in the current location.
+
+Target:
+HAPPY = [7, 0, 15, 15, 24] = GGGGG = 61(15)
+
+Sample Guess
+TRAPI = [19, 17, 0, 15, 8] = BBYGB = 59(15)(6)
+
+QATPC
+
+# Elimination list - remove the word if these characters are noticed
+Elimination list: [19, 17, 8]
+# Partial list - remove the word if these characters are absent.
+Partial list: [0]
+# Filter list - Select word if the character is in the exact location. Else, remove the word if these characters are not present in the exact location.
+Filter list: [(3, 15)]
+
+GAPPD = [6, 0, 15, 15, 3]
+
+for entry in wordlist:
+    qset = wordlist[entry]["qset"]
+    for element in ElList:
+        if(element in qset):
+            wordlist.pop(entry, None)
+
+for entry in wordlist:
+    qset = wordlist[entry]["qset"]
+    for element in PlList:
+        if(element in qset):
+            pass
+        else:
+            wordlist.pop(entry, None)
+
+for entry in wordlist:
+    qset = wordlist[entry]["qset"]
+    for pair in filList:
+        index, val = pair
+        if(qset[index] != value)
+            wordlist.pop(entry, None)
+
+SortingFunction()
+    WordSum = sum(qset)
+    pSum = sumG(qset)
+    qSum = 25
+
+
+BBBBB
+YYYYY
+GGGGG
+
+AUDIO with BBYBY p = 339/12972
+
+12972/339 = 38.2655 
+
+I = -3.322259 log p = -3.322259 log(339/12972) = 5.25849
+
+
+word,i,j,k,l,m
+BATCH,1,0,19,2,7
+DAYCH,3,0,24,2,7
+GATCH,6,0,19,2,7
+GAUCH,6,0,20,2,7
+HATCH,7,0,19,2,7
+VAUCH,21,0,20,2,7
+WATCH,22,0,19,2,7
+
+        
